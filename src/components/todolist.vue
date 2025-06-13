@@ -1,6 +1,10 @@
 <script setup>
 import { ref, onMounted, watch, computed } from "vue";
 
+
+const msg = ref('')
+
+
 // variáveis reativas
 const todos = ref([]);
 
@@ -87,9 +91,11 @@ watch(dateTodo, (newValue) => {
       >
         <label>
           <input type="checkbox" v-model="todo.done" />
+          <input type="date" v-model="todo.dueDate">
           <input type="text" v-model="todo.name" />
         </label>
       </div>
     </div>
+    {{ msg }}
   </div>
 </template>
