@@ -2,7 +2,6 @@
 import { ref, onMounted, watch, computed } from "vue";
 
 
-const msg = ref('')
 
 
 // variáveis reativas
@@ -96,6 +95,5 @@ watch(dateTodo, (newValue) => {
         </label>
       </div>
     </div>
-    {{ msg }}
   </div>
 </template>
